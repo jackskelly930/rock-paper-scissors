@@ -1,40 +1,26 @@
-/*let myChoice = prompt('Choose rock paper or scissors') */
-/*
-function playRound(computerChoice) {
-    let compNumb = Math.floor(Math.random() * 3);
-    if (compNumb.value == 0) {
-        return 'rock'
-    } else if (compNumb == 1) {
-        return 'scissors'
-    } else {
-    return 'paper';
-} 
-}
-*/
-
-const myChoice = 'rock'
+const myChoice = prompt('Please choose rock paper or scissors.')
 console.log(computerChoice())
+
 function computerChoice() {
-    const choices = ['rock', 'paper', 'scissors'];
-        return choices[Math.floor(Math.random() * 3)];
+    const computerChoices = ['rock', 'paper', 'scissors'];
+    cChoice = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+    return cChoice
 } 
 
-
-if (myChoice == 'rock' && computerChoice == 'scissors') {
+if (myChoice == 'rock' && cChoice == 'scissors') {
         console.log('You win!');
-    } else if (myChoice == 'scissors' && computerChoice == 'paper') {
+    } else if (myChoice == 'scissors' && cChoice == 'paper') {
         console.log('You win!');
-    } else if (myChoice == 'scissors' && computerChoice == 'rock') {
+    } else if (myChoice == 'scissors' && cChoice == 'rock') {
         console.log('You lose');
-    } else if (myChoice == 'paper' && computerChoice == 'rock') {
+    } else if (myChoice == 'paper' && cChoice == 'rock') {
         console.log('You win!');
-    } else if (myChoice == 'rock' && computerChoice == 'paper') {
+    } else if (myChoice == 'rock' &&  cChoice == 'paper') {
         console.log('You lose');
-    } else if (myChoice == 'paper' && computerChoice == 'scissors') {
+    } else if (myChoice == 'paper' && cChoice == 'scissors') {
         console.log('You lose');
     } else {
         console.log('It\'s a tie try again');
     }   
-
 
 
